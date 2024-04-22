@@ -1,0 +1,329 @@
+
+$primary: #FF4800;
+$accent: #4E4E91;
+$dark-text: #1A1A3F;
+$sponsor-background: #E8EBF3;
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 320px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    width: 100px;
+}
+@media only screen and (min-width: 500px){
+    .wrapper{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-left: 10px;
+    }
+    .wrapper i{
+        display: none;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 60px;
+        min-width: 320px;
+    }
+    .nav-menu-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .nav-menu{
+        width: 300px;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .buy-button{
+        height: 20px;
+        width: 70px;
+        padding: 5px;
+        background-color: $primary;
+        color: white;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .section1{
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .small-dev{
+        min-width: 300px;
+        max-width: 500px;
+    }
+    .main-img{
+        display: block;
+        width: 40%;
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .section1 p{
+        margin: auto;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .wrapper-inp{
+        margin: auto;
+        display: flex;
+        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    .inp-email{
+        outline: none;
+        height: 40px;
+        border: 3px solid rgb(226, 226, 226);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        font-size: 12px;
+        flex-grow: 2;
+    }
+    .sign-up{
+        display: flex;
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 46px;
+        flex-grow: 1;
+        background-color: $accent;
+        color: white;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .not-footer{
+        margin-top: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: $sponsor-background;
+    }
+    .section2{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .section2 h2{
+        justify-content: center;
+        margin-top: 70px;
+        margin-bottom: 10px;
+        color: $dark-text;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .section2 p{
+        margin: auto;
+        max-width: 700px;
+        text-align: center;
+    }
+    .steps{
+        margin: auto;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        max-width: 80%;
+    }
+    .step{
+        font-size: 12px;
+        margin: auto;
+        margin-top: 10px;
+        padding-left: 10px;
+        min-width: 30%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: baseline;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    }
+    .step-icon{
+        color: white;
+        position: relative;
+        bottom: 30px;
+        left: 10px;
+        min-width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $accent;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .footer{
+        margin-top: 50px;
+        display: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: $sponsor-background;
+    }
+    .sponsor-image{
+        width: 100px;
+        height: 35px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .wrapper{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-left: 10px;
+    
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        height: 60px;
+        min-width: 320px;
+    }
+    .nav-menu-wrapper{
+        display: flex;
+    }
+    .nav-menu{
+        display: none;
+    }
+
+    .buy-button{
+        margin-right: 10px;
+        height: 20px;
+        width: 70px;
+        padding: 5px;
+        background-color: $primary;
+        color: white;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .section1{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .main-img{
+        display: none;
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .section1 p{
+        margin: auto;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .wrapper-inp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .inp-email{
+        outline: none;
+        height: 40px;
+        border: 3px solid rgb(226, 226, 226);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        font-size: 12px;
+        width: 240px;
+    }
+    .sign-up{
+        display: flex;
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 46px;
+        width: 80px;
+        background-color: $accent;
+        color: white;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .section2{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .section2 h2{
+        margin-top: 70px;
+        margin-bottom: 10px;
+        color: $dark-text;
+        text-align: left;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .section2 p{
+        margin: 0px;
+        text-align: center;
+    }
+    .step{
+        font-size: 14px;
+        margin: auto;
+        margin-top: 10px;
+        padding-left: 10px;
+        width: 300px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: baseline;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 5px 5px 10px rgb(215, 215, 215);
+    }
+    .step-icon{
+        color: white;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $accent;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .footer{
+        background-color: $sponsor-background;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .sponsor-image{
+        width: 100px;
+        height: 35px;
+    }
+    .not-footer{
+        display: none;
+    }
+}
